@@ -16,19 +16,60 @@
   <title>Jala Design.</title>
 
   <meta name="description" content="">
+  <style>
+  * {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font: 20px Montserrat, sans-serif;
+    line-height: 1.8;
+    color: #162440;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 {
+    color: #162440;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .bg-2 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+  .bg-3 {
+    background-color: #F2F2F2; /* White */
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  /* .navbar {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  } */
+  .navbar-nav  li a:hover {
+    color: #1abc9c !important;
+  }
+  </style>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="container-fluid" style="background-image: url('images/fistbump.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+  <div class="container-fluid" style="background-image: url('images/fistbump.jpeg'); background-color: rgba(0, 0, 255, 0.8); background-repeat: no-repeat; background-size: cover; background-position: center center;">
   <header>
 
       <!-- NAVBAR -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent">
         <div class="container-fluid">
           <a class="navbar-brand" href="#"><b>Jala</b> Design.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" href="#" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
@@ -58,13 +99,16 @@
     <body>
 
     <!-- First Section -->
-    <div class="image-page bg-transparent">
-      <h2 class="text-center">Welcome to <strong>Lorum Ipsum.</strong> </h2>
-      <p class="text-center">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> Nulla eu suscipit est. Donec tincidunt elementum purus non porta. Morbi.</p>
+    <div class="container bg-1">
+      <div class="image-page bg-transparent">
+        <h2 class="text-center">Welcome to <strong>Lorum Ipsum.</strong> </h2>
+        <p class="text-center">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> Nulla eu suscipit est. Donec tincidunt elementum purus non porta. Morbi.</p>
 
-      <div class="text-center">
-        <a type="button" class="btn btn-primary btn-light" href="#" role="button">GET STARTED</a>
+        <div class="text-center">
+          <a type="button" class="btn btn-primary btn-light" style="border-radius:0;" href="#" role="button">GET STARTED</a>
+        </div>
       </div>
+
     </div>
 
   </div> <!--image container -->
@@ -72,16 +116,16 @@
 
 
       <!-- Second Section -->
-      <div class="container">
+      <div class="container-fluid bg-2">
         <div class="row">
-          <div class="col">
-          </div>
-           <div class="col-6">
+          <!-- <div class="col">
+          </div> -->
+           <div class="col">
              <h1 class="text-center">Lorum <b>Ipsum dolor sit amet.</b></h1>
              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id odio gravida consequat. Proin scelerisque nulla nec risus pharetra euismod. Cras feugiat eros ut elit dapibus.</p>
           </div>
-          <div class="col">
-          </div>
+          <!-- <div class="col">
+          </div> -->
         </div>
 
         <div class="row">
@@ -102,22 +146,23 @@
     <!-- Second -->
 
     <!-- Third Section -->
-    <!-- Second -->
-    <div class="container">
+    <div class="container-fluid bg-3">
       <div class="row">
-        <div class="col-sm-6" style="background-image: url('images/fistbump.jpeg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+        <div class="col-sm-3" style="background-repeat: no-repeat; background-size: cover; background-position: center center;">
+          <img src="images/fistbump.jpeg" alt="fistbump" class="img-fluid" style="height: 100%; width: 100%; background-position: center center;">
 
         </div>
         <div class="col-sm-6">
           <div class="row">
             <div class="col-12 col-sm-6">
               <h3>Lorum Ipsum dolor</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nul </p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id odio gravida consequat. Proin scelerisque nulla nec risus pharetra euismod. Cras feugiat eros ut elit dapibus, quis scelerisque ex.</p>
+              <a type="button" class="btn btn-primary btn-light" style="border-radius:0; background-color:#14213D; color:#F2F2F2;" href="#" role="button">GET STARTED</a>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
+          </div> <!-- row for text -->
+        </div> <!-- col-sm-->
+      </div> <!-- row for image -->
+    </div> <!-- container -->
 
 
     <!-- Third -->
