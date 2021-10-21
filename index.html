@@ -17,49 +17,119 @@
 
   <meta name="description" content="">
   <style>
+
+    html,body {
+      width: 100%;
+      height: 100%;
+      margin: 0px;
+      padding: 0px;
+      overflow-x: hidden;
+    }
+
   * {
-    margin: 0;
+    margin-: 0;
     padding: 0;
+    font: 16px Montserrat, sans-serif;
+  }
+
+  a:hover {
+    cursor: pointer;:
   }
 
   body {
-    font: 20px Montserrat, sans-serif;
-    line-height: 1.8;
-    color: #162440; /* Blue */
+    line-height: 1.8em;
+    color: black;
   }
 
-  p {font-size: 16px;}
+  h1 {
+    font-size: 36px;
+  }
 
-  .margin {margin-bottom: 45px;}
+  h2 {
+    font-size: 30px;
+  }
+
+  h3 {
+    font-size: 24px
+  }
+
+  p {
+    font-size: 18px;
+    line-height: 1.7em;
+  }
+
+  h1 b {
+    font-size: 36px;
+  }
+
+  h2 b {
+    font-size: 30px;
+  }
+
+  h3 b {
+    font-size: 24px;
+  }
+
+  p b {
+    font-size: 18px;
+  }
+
+  .col {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+  }
+
+  .col-md-auto p {
+    margin-right: 10em;
+    margin-left: 10em;
+    text-align: center;
+  }
+
+  .margin {
+    margin-bottom: 45px;
+  }
 
   .bg-1 {
     color: #162440;
-    font: 20px Montserrat, sans-serif;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    font: 16px Montserrat, sans-serif;
+    padding-top: 250px;
+    padding-bottom: 250px;
   }
 
   .bg-2 {
-    font: 20px Montserrat, sans-serif;
-    padding-top: 70px;
-    padding-bottom: 70px;
+    font: 16px Montserrat, sans-serif;
+    line-height: 1.7em;
+    padding-top: 140px;
+    padding-bottom: 140px;
+    padding-right: 50px;
+    padding-left: 50px;
   }
 
   .bg-3 {
-    font: 20px Montserrat, sans-serif;
+    font: 16px Montserrat, sans-serif;
     background-color: #F2F2F2; /* Grey */
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 150px;
+    padding-bottom: 150px;
   }
 
   .navbar {
     padding-top: 15px;
     padding-bottom: 15px;
+    min-width: 100%;
     border: 0;
+    border-bottom-style: solid;
+    border-color: white;
     border-radius: 0;
     margin-bottom: 0;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 5px;
+  }
+
+  .navbar .container-fluid {
+    padding-bottom: 15px;
+    border-bottom-style: solid;
+    border-color: white;
   }
 
   .navbar-nav  li a:hover {
@@ -118,31 +188,33 @@
     <!-- First Section -->
     <div class="container bg-1">
       <div class="image-page bg-transparent">
-        <h2 class="text-center">Welcome to <strong>Lorum Ipsum.</strong> </h2>
-        <p class="text-center">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing elit.</strong> Nulla eu suscipit est. Donec tincidunt elementum purus non porta. Morbi.</p>
+        <div class="col-md-auto">
+          <h1 class="text-center">Welcome to <b>Lorum Ipsum.</b></h1>
+          <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit.</b> Nulla eu suscipit est. Donec tincidunt elementum purus non porta. Morbi.</p>
 
-        <div class="text-center">
-          <a type="button" class="btn btn-primary btn-light" style="border-radius:0;" href="#" role="button">GET STARTED</a>
+          <div class="text-center">
+            <a type="button" class="btn btn-primary btn-light" style="border-radius:0;" href="#" role="button">GET STARTED</a>
+          </div>
         </div>
-      </div>
+
+        </div>
 
     </div>
 
   </div> <!--image container -->
     <!-- First -->
 
-
       <!-- Second Section -->
       <div class="container-fluid bg-2">
         <div class="row">
-          <!-- <div class="col">
-          </div> -->
-           <div class="col">
-             <h1 class="text-center">Lorum <b>Ipsum dolor sit amet.</b></h1>
+          <div class="col-2">
+          </div>
+           <div class="col-3 ">
+             <h2 class="text-center">Lorum Ipsum<b> dolor sit amet.</b></h2>
              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id odio gravida consequat. Proin scelerisque nulla nec risus pharetra euismod. Cras feugiat eros ut elit dapibus.</p>
           </div>
-          <!-- <div class="col">
-          </div> -->
+          <div class="col-2">
+          </div>
         </div>
 
         <div class="row">
@@ -172,7 +244,7 @@
         <div class="col-sm-6">
           <div class="row">
             <div class="col-12 col-sm-6">
-              <h3>Lorum Ipsum dolor</h3>
+              <h2>Lorum Ipsum dolor</h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id odio gravida consequat. Proin scelerisque nulla nec risus pharetra euismod. Cras feugiat eros ut elit dapibus, quis scelerisque ex.</p>
               <a type="button" class="btn btn-primary btn-light" style="border-radius:0; background-color:#14213D; color:#F2F2F2;" href="#" role="button">GET STARTED</a>
             </div>
