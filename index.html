@@ -93,15 +93,15 @@
   .bg-1 {
     color: #162440;
     font: 16px Montserrat, sans-serif;
-    padding-top: 250px;
-    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
 
   .bg-2 {
     font: 16px Montserrat, sans-serif;
     line-height: 1.7em;
-    padding-top: 140px;
-    padding-bottom: 140px;
+    padding-top: 130px;
+    padding-bottom: 130px;
     padding-right: 50px;
     padding-left: 50px;
   }
@@ -136,6 +136,11 @@
     color: #162440 !important;
   }
 
+  .btn {
+    padding: 0.6rem .8rem;
+    font-size: .8rem;
+  }
+
   footer {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -162,19 +167,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">HOME</a>
+                <a class="nav-link" aria-current="page" href="#home">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">ABOUT US</a>
+                <a class="nav-link" href="#about-us">ABOUT US</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">SERVICES</a>
+                <a class="nav-link" href="#services">SERVICES</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">PORTFOLIO</a>
+                <a class="nav-link" href="#">PORTFOLIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link">CONTACT</a>
+                <a class="nav-link" href="#">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -186,7 +191,7 @@
     <body>
 
     <!-- First Section -->
-    <div class="container bg-1">
+    <div class="container bg-1" id="home">
       <div class="image-page bg-transparent">
         <div class="col-md-auto">
           <h1 class="text-center">Welcome to <b>Lorum Ipsum.</b></h1>
@@ -205,15 +210,15 @@
     <!-- First -->
 
       <!-- Second Section -->
-      <div class="container-fluid bg-2">
+      <div class="container-fluid bg-2" id="about-us">
         <div class="row">
-          <div class="col-2">
-          </div>
-           <div class="col-3 ">
+          <!-- <div class="col-2">
+          </div> -->
+           <div class="col-md-auto">
              <h2 class="text-center">Lorum Ipsum<b> dolor sit amet.</b></h2>
              <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id odio gravida consequat. Proin scelerisque nulla nec risus pharetra euismod. Cras feugiat eros ut elit dapibus.</p>
-          </div>
-          <div class="col-2">
+          <!-- </div>
+          <div class="col-2"> -->
           </div>
         </div>
 
@@ -235,16 +240,15 @@
     <!-- Second -->
 
     <!-- Third Section -->
-    <div class="container-fluid bg-3">
-      <div class="row">
+    <div class="container-fluid bg-3 bg-grey" id="services">
+      <div class="row align-center">
         <div class="col-sm-3" style="background-repeat: no-repeat; background-size: cover; background-position: center center;">
           <img src="images/fistbump.jpeg" alt="fistbump" class="img-fluid" style="height: 100%; width: 100%; background-position: center center;">
-
         </div>
         <div class="col-sm-6">
           <div class="row">
             <div class="col-12 col-sm-6">
-              <h2>Lorum Ipsum dolor</h2>
+              <h2>Lorum Ipsum <b>dolor si amet.</b></h2>
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac nulla id odio gravida consequat. Proin scelerisque nulla nec risus pharetra euismod. Cras feugiat eros ut elit dapibus, quis scelerisque ex.</p>
               <a type="button" class="btn btn-primary btn-light" style="border-radius:0; background-color:#14213D; color:#F2F2F2;" href="#" role="button">GET STARTED</a>
             </div>
