@@ -1,51 +1,154 @@
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+
 * {
-  margin: 0;
-  padding: 0;
+margin-: 0;
+padding: 0;
+font: 16px Montserrat, sans-serif;
+}
+
+a:hover {
+cursor: pointer;:
+}
+
+body {
+line-height: 1.8em;
+color: black;
+}
+
+h1 {
+font-size: 40px;
+}
+
+h2 {
+font-size: 36px;
+}
+
+h3 {
+font-size: 30px
+}
+
+p {
+font-size: 18px;
+line-height: 1.7em;
+}
+
+h1 span {
+font-size: 36px;
+}
+
+h2 b {
+font-size: 30px;
+}
+
+h3 b {
+font-size: 24px;
+}
+
+p b {
+font-size: 18px;
+}
+
+@media only screen and (max-width: 300px) {
+.col {
+  padding: auto;
+}
+.col-md-auto p {
+  margin-right: 10em;
+  margin-left: 10em;
+  text-align: center;
+}
+}
+
+@media only screen and (min-width: 768px) {
+.img-fluid {
+  padding-left: 10%;
+}
+
+.col {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+}
+
+.col-md-auto p {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+}
+
+
+.margin {
+margin-bottom: 45px;
+}
+
+.bg-1 {
+color: #162440;
+font: 16px Montserrat, sans-serif;
+padding-top: 200px;
+padding-bottom: 200px;
+}
+
+.bg-2 {
+font: 16px Montserrat, sans-serif;
+line-height: 1.7em;
+padding-top: 130px;
+padding-bottom: 130px;
+padding-right: 50px;
+padding-left: 50px;
+}
+
+.bg-3 {
+font: 16px Montserrat, sans-serif;
+background-color: #F2F2F2; /* Grey */
+padding-top: 150px;
+padding-bottom: 150px;
+}
+
+.navbar {
+padding-top: 15px;
+padding-bottom: 15px;
+min-width: 100%;
+border: 0;
+border-bottom-style: solid;
+border-color: white;
+border-radius: 0;
+margin-bottom: 0;
+font-size: 11px;
+letter-spacing: 5px;
+}
+
+.navbar .container-fluid {
+padding-bottom: 15px;
+border-bottom-style: solid;
+border-color: white;
+}
+
+.navbar-nav  li a:hover {
+color: #162440 !important;
+}
+
+.btn {
+padding: 0.6rem .8rem;
+font-size: .8rem;
+}
+
+.r3 {
+margin-left: 1px;
+margin-right: 10px;
 }
 
 footer {
-  bottom: 0;
-  color: #F2F2F2;
-  background-color: #14213D;
+padding-top: 15px;
+padding-bottom: 15px;
+bottom: 0;
+color: #F2F2F2;
+background-color: #14213D;
+align-items: center;
 }
-/* .container {
-  height: 100vh;
-  width: 100%;
-  background-image: url(../images/fistbump.jpeg);
-  background-position: center;
-  background-size: cover;
-  padding-left: 5%;
-  padding-right: 5%;
-  box-sizing: border-box;
-  position: relative;
-} */
-
-/* .nav-bar {
-  width: 100%;
-  height: 15vh;
-  margin: auto;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  width: 160px;
-  cursor: pointer;
-}
-
-nav {
-  flex: 1;
-  padding-left: 60px;
-}
-
-nav ul li {
-  display: inline-block;
-  list-style: none;
-  margin: 0px 20px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: black;
-
-} */
